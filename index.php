@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>Title of the document</title>
-    <link rel="stylesheet" type="text/css" href="Common/css/bootstrap.min.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="4.Common/css/bootstrap.min.css" media="screen" />
     
 </head>
 <body>
@@ -26,6 +26,6 @@
         <div class="col-sm-3">der</div>        
     </div>
 </body>
-<script src="Common/js/bootstrap.min.js"></script>
+<script src="4.Common/js/bootstrap.min.js"></script>
 
 </html>
