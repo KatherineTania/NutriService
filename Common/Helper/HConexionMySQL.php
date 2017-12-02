@@ -24,9 +24,11 @@ class HConexionMySQL
             echo $ex;
         }
     }    
-    public function EjecutarQry($cQuery)
+    public function EjecutarSP($cNombreSP,$oParams=array())
     {
         $this->Conectar();
+        
+        $cQuery = "CALL ".$cNombreSP." (".implode(",", $oParams).")";
         
         if (!$this->objConexion->multi_query($cQuery)) {
             echo "Falló CALL: (" . $this->objConexion->errno . ") " . $this->objConexion->error;
