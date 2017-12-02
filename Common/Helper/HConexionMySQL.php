@@ -1,5 +1,5 @@
 <?php
-include 'Common/Entity/Sistema.php';
+include '../Common/Entity/Sistema.php';
 
 class HConexionMySQL
 {
@@ -28,7 +28,25 @@ class HConexionMySQL
     {
         $this->Conectar();
         
-        $cQuery = "CALL ".$cNombreSP." (".implode(",", $oParams).")";
+        //$cQuery = "CALL ".$cNombreSP." (".implode(",", $oParams).")";
+        $cQuery = "CALL ".$cNombreSP." (";
+        
+        for($i =0 ; $i<count($oParams); $i++)
+        {
+            /*if(is_numeric($oParams[$i]))
+            {
+                $cQuery = $cQuery.$oParams[$i].",";
+            }
+            else
+            {*/
+                $cQuery = $cQuery."'".$oParams[$i]."',";
+            //}            
+        }
+        
+        $cQuery = substr($cQuery, 0, strlen($cQuery)-1);
+        $cQuery = $cQuery.")";
+        
+        echo 'query: '.$cQuery;
         
         if (!$this->objConexion->multi_query($cQuery)) {
             echo "Falló CALL: (" . $this->objConexion->errno . ") " . $this->objConexion->error;
