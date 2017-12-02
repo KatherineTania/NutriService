@@ -79,35 +79,35 @@
                                     <div class="form-group">
                                       <label for="inputEmail3" class="col-sm-2 control-label">Nombres: </label>
                                       <div class="col-sm-10">
-                                        <input type="email" class="form-control" id="inputEmail3" placeholder="Nombres">
+                                        <input type="text" class="form-control" id="inputEmail3" placeholder="Nombres">
                                       </div>
                                     </div>
 
                                     <div class="form-group">
-                                      <label for="inputPassword3" class="col-sm-2 control-label">Primer Ap: </label>
+                                      <label for="inputEmail3" class="col-sm-2 control-label">Primer Ap: </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Primer Apellido">
+                                          <input type="text" class="form-control" id="inputtext3" placeholder="Primer Apellido">
                                       </div>
                                     </div>
 
                                     <div class="form-group">
-                                      <label for="inputPassword3" class="col-sm-2 control-label">Segundo Ap: </label>
+                                      <label for="inputText3" class="col-sm-2 control-label">Segundo Ap: </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Segundo Apellido">
+                                        <input type="text" class="form-control" id="inputtext3" placeholder="Segundo Apellido">
                                       </div>
                                     </div>
                                      
                                      <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Num. Doc: </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Numero de documento">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Numero de documento">
                                       </div>
                                     </div>
                                      
                                       <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Fecha Nacimiento: </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Fecha de nacimeinto">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Fecha de nacimeinto">
                                       </div>
                                     </div>
                                      
@@ -116,7 +116,7 @@
                                      <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Direccion: </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Direccion">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Direccion">
                                       </div>
                                     </div>
                                      
@@ -138,49 +138,49 @@
                                     <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Telefono: </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Telefono">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Telefono">
                                       </div>
                                     </div>
 
                                     <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Email: </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Email">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Email">
                                       </div>
                                     </div>
 
                                     <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Cargo: </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Cargo">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Cargo">
                                       </div>
                                     </div>      
                                      
                                       <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Profesion: </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Profesion">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Profesion">
                                       </div>
                                     </div> 
                                      
                                       <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Grado Academico: </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Grado Academico">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Grado Academico">
                                       </div>
                                     </div> 
                                      
                                       <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Servicio: </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Servicio">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Servicio">
                                       </div>
                                     </div> 
                                      
                                       <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Fecha de Ingreso: </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Fecha de Ingreso">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Fecha de Ingreso">
                                       </div>
                                     </div> 
                                                                            
@@ -209,35 +209,35 @@
                                     <div class="form-group">
                                       <label for="inputEmail3" class="col-sm-2 control-label">Nombres: </label>
                                       <div class="col-sm-10">
-                                        <input type="email" class="form-control" id="inputEmail3" placeholder="Nombres">
+                                        <input type="text" class="form-control" id="inputEmail3" placeholder="Nombres">
                                       </div>
                                     </div>
 
                                     <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Primer Ap: </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Primer Apellido">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Primer Apellido">
                                       </div>
                                     </div>
 
                                     <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Segundo Ap: </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Segundo Apellido">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Segundo Apellido">
                                       </div>
                                     </div>
                                      
                                      <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Num. Doc: </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Numero de documento">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Numero de documento">
                                       </div>
                                     </div>
                                      
                                       <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Fecha Nacimiento: </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Fecha de nacimeinto">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Fecha de nacimeinto">
                                       </div>
                                     </div>
                                      
@@ -246,7 +246,7 @@
                                      <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Lugar de Nacimiento </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Lugar de Nacimiento">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Lugar de Nacimiento">
                                       </div>
                                     </div>
                                      
@@ -261,21 +261,21 @@
                                     <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Telefono: </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Telefono">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Telefono">
                                       </div>
                                     </div>
 
                                     <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Email: </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Email">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Email">
                                       </div>
                                     </div>
 
                                     <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Direccion: </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Direccion">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Direccion">
                                       </div>
                                     </div>   
                                      
@@ -291,14 +291,14 @@
                                       <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Ocupacion: </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Ocupacion">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Ocupacion">
                                       </div>
                                     </div> 
                                      
                                       <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">N° HCl: </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Nro de Historia Clinica">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Nro de Historia Clinica">
                                       </div>
                                     </div> 
                                      
@@ -325,35 +325,35 @@
                                     <div class="form-group">
                                       <label for="inputEmail3" class="col-sm-2 control-label">Codigo Paciente: </label>
                                       <div class="col-sm-10">
-                                        <input type="email" class="form-control" id="inputEmail3" placeholder="Codigo Paciente">
+                                        <input type="text" class="form-control" id="inputEmail3" placeholder="Codigo Paciente">
                                       </div>
                                     </div>
 
                                     <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Fecha Admision: </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Fecha Admision">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Fecha Admision">
                                       </div>
                                     </div>
 
                                     <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Servicio: </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Servicio">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Servicio">
                                       </div>
                                     </div>
                                      
                                      <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Medico: </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Medico">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Medico">
                                       </div>
                                     </div>
                                      
                                       <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Padre: </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Padre">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Padre">
                                       </div>
                                     </div>
                                      
@@ -362,21 +362,21 @@
                                      <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Madre: </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Madre">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Madre">
                                       </div>
                                     </div>
                                      
                                      <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Diagnostico de Alta: </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Diagnostico de Alta">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Diagnostico de Alta">
                                       </div>
                                     </div>
                                      
                                      <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Fecha de Alta: </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Fecha de Alta">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Fecha de Alta">
                                       </div>
                                     </div>
                                      
@@ -390,42 +390,42 @@
                                     <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Tipo de Seguro: </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Tipo de Seguro">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Tipo de Seguro">
                                       </div>
                                     </div>
 
                                     <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Nro de Cama: </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Nro de Cama">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Nro de Cama">
                                       </div>
                                     </div>
 
                                     <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Nro de piso: </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Nro de piso">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Nro de piso">
                                       </div>
                                     </div>      
                                      
                                       <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Diag. Med. Ingreso: </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Diagnostico Medico Ingreso">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Diagnostico Medico Ingreso">
                                       </div>
                                     </div> 
                                      
                                       <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Diag. Nutri. Ingreso: </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Diagnostico Nutricional Ingreso">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Diagnostico Nutricional Ingreso">
                                       </div>
                                     </div> 
                                      
                                       <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Operacion Realizada: </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Operacion Realizada">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Operacion Realizada">
                                       </div>
                                     </div> 
                                      
@@ -455,35 +455,35 @@
                                     <div class="form-group">
                                       <label for="inputEmail3" class="col-sm-2 control-label">Nombres: </label>
                                       <div class="col-sm-10">
-                                        <input type="email" class="form-control" id="inputEmail3" placeholder="Nombres">
+                                        <input type="text" class="form-control" id="inputEmail3" placeholder="Nombres">
                                       </div>
                                     </div>
 
                                     <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Primer Ap: </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Primer Apellido">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Primer Apellido">
                                       </div>
                                     </div>
 
                                     <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Segundo Ap: </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Segundo Apellido">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Segundo Apellido">
                                       </div>
                                     </div>
                                      
                                      <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Num. Doc: </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Numero de documento">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Numero de documento">
                                       </div>
                                     </div>
                                      
                                       <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Fecha Nacimiento: </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Fecha de nacimeinto">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Fecha de nacimeinto">
                                       </div>
                                     </div>
                                      
@@ -492,7 +492,7 @@
                                      <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Lugar de Nacimiento </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Lugar de Nacimiento">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Lugar de Nacimiento">
                                       </div>
                                     </div>
                                      
@@ -507,21 +507,21 @@
                                     <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Telefono: </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Telefono">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Telefono">
                                       </div>
                                     </div>
 
                                     <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Email: </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Email">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Email">
                                       </div>
                                     </div>
 
                                     <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Direccion: </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Direccion">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Direccion">
                                       </div>
                                     </div>   
                                      
@@ -537,14 +537,14 @@
                                       <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Ocupacion: </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Ocupacion">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Ocupacion">
                                       </div>
                                     </div> 
                                      
                                       <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">N° HCl: </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Nro de Historia Clinica">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Nro de Historia Clinica">
                                       </div>
                                     </div> 
                                      
@@ -570,35 +570,35 @@
                                     <div class="form-group">
                                       <label for="inputEmail3" class="col-sm-2 control-label">Codigo Paciente: </label>
                                       <div class="col-sm-10">
-                                        <input type="email" class="form-control" id="inputEmail3" placeholder="Codigo Paciente">
+                                        <input type="text" class="form-control" id="inputEmail3" placeholder="Codigo Paciente">
                                       </div>
                                     </div>
 
                                     <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Fecha Registro: </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Fecha Registro">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Fecha Registro">
                                       </div>
                                     </div>
 
                                     <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Circunferencia Muñeca (cm): </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Circunferencia Muñeca">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Circunferencia Muñeca">
                                       </div>
                                     </div>
                                      
                                      <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Circunferencia Braquial(cm): </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Circunferencia Braquial(cm)">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Circunferencia Braquial(cm)">
                                       </div>
                                     </div>
                                      
                                       <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Circunferencia Cintura(cm): </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Circunferencia Cintura(cm)">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Circunferencia Cintura(cm)">
                                       </div>
                                     </div>
                                      
@@ -607,7 +607,7 @@
                                      <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Pliegue Tricipital(mm): </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Pliegue Tricipital(mm)">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Pliegue Tricipital(mm)">
                                       </div>
                                     </div>
                                      
@@ -615,49 +615,49 @@
                                      <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Pliegue Bicipital(mm): </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Pliegue Bicipital(mm)">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Pliegue Bicipital(mm)">
                                       </div>
                                     </div>
                                      
                                      <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Pliegue Subescapular(mm): </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Pliegue Subescapular(mm)">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Pliegue Subescapular(mm)">
                                       </div>
                                     </div>
                                      
                                      <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Pliegue Subprailiaco(mm): </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Pliegue Subprailiaco(mm)">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Pliegue Subprailiaco(mm)">
                                       </div>
                                     </div>
                                      
                                      <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Reserva Proteica: </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Reserva Proteica">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Reserva Proteica">
                                       </div>
                                     </div>
                                      
                                      <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Reserva Energetica: </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Reserva Energetica">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Reserva Energetica">
                                       </div>
                                     </div>
                                      
                                      <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Dagnostico IMC: </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Dagnostico IMC">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Dagnostico IMC">
                                       </div>
                                     </div>
                                      
                                      <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Sum Pliegues: </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Sum Pliegues">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Sum Pliegues">
                                       </div>
                                     </div>
                                      
@@ -672,21 +672,21 @@
                                      <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Peso: </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Peso">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Peso">
                                       </div>
                                     </div>
                                      
                                      <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Talla: </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Talla">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Talla">
                                       </div>
                                     </div>
                                      
                                      <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Edad: </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Edad">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Edad">
                                       </div>
                                     </div>
                                  
@@ -702,56 +702,56 @@
                                     <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">IMC: </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="IMC">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="IMC">
                                       </div>
                                     </div>
 
                                     <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">%Grasa: </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="%Grasa">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="%Grasa">
                                       </div>
                                     </div>
 
                                     <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Peso Ideal: </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Cargo">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Cargo">
                                       </div>
                                     </div>      
                                      
                                       <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">CMB(mm): </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Profesion">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Profesion">
                                       </div>
                                     </div> 
                                      
                                       <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">AMB(mm): </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="AMB(mm)">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="AMB(mm)">
                                       </div>
                                     </div> 
                                      
                                       <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">AGB(mm^2): </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="AGB(mm^2)">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="AGB(mm^2)">
                                       </div>
                                     </div> 
                                      
                                       <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">ABT(mm^2): </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="ABT(mm^2)">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="ABT(mm^2)">
                                       </div>
                                     </div> 
                                      
                                      <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Circunferencia Osteomuscular: </label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Circunferencia Osteomuscular">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Circunferencia Osteomuscular">
                                       </div>
                                     </div> 
                                                                            
