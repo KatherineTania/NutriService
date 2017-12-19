@@ -65,6 +65,8 @@
                                  <li><a href="#tab7primary" data-toggle="tab">Personal</a></li>
 
                             </ul>
+                   
+                    
                     </div>
                     <div class="panel-body">
                         <div class="tab-content">
@@ -472,28 +474,28 @@
                                     <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Fecha Registro: </label>
                                       <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Fecha Registro">
+                                        <input type="text"  class="form-control" id="inputPassword3" placeholder="Fecha Registro">
                                       </div>
                                     </div>
 
                                     <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Circunferencia Muñeca (cm): </label>
                                       <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Circunferencia Muñeca">
+                                          <input type="text"name="nCircunferenciaMuñeca" class="form-control" id="inputPassword3" placeholder="Circunferencia Muñeca">
                                       </div>
                                     </div>
                                      
                                      <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Circunferencia Braquial(cm): </label>
                                       <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Circunferencia Braquial(cm)">
+                                          <input type="text"name="nCircunferenciaBraquial" class="form-control" id="inputPassword3" placeholder="Circunferencia Braquial(cm)">
                                       </div>
                                     </div>
                                      
                                       <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Circunferencia Cintura(cm): </label>
                                       <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Circunferencia Cintura(cm)">
+                                          <input type="text"name="nCircunferenciaCintura" class="form-control" id="inputPassword3" placeholder="Circunferencia Cintura(cm)">
                                       </div>
                                     </div>
                                      
@@ -502,7 +504,7 @@
                                      <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Pliegue Tricipital(mm): </label>
                                       <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Pliegue Tricipital(mm)">
+                                          <input type="text" name="nPliegueTricipital" class="form-control" id="inputPassword3" placeholder="Pliegue Tricipital(mm)">
                                       </div>
                                     </div>
                                      
@@ -510,54 +512,35 @@
                                      <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Pliegue Bicipital(mm): </label>
                                       <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Pliegue Bicipital(mm)">
-                                      </div>
+                                          <input type="text"name="nPliegueBicipital" class="form-control" id="inputPassword3" placeholder="Pliegue Bicipital(mm)">
+                                      </div> 
                                     </div>
                                      
                                      <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Pliegue Subescapular(mm): </label>
                                       <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Pliegue Subescapular(mm)">
+                                          <input type="text"name="nPliegueSubescapular" class="form-control" id="inputPassword3" placeholder="Pliegue Subescapular(mm)">
                                       </div>
                                     </div>
                                      
                                      <div class="form-group">
-                                      <label for="inputPassword3" class="col-sm-2 control-label">Pliegue Subprailiaco(mm): </label>
+                                      <label for="inputPassword3" class="col-sm-2 control-label">Pliegue Suprailiaco(mm): </label>
                                       <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Pliegue Subprailiaco(mm)">
+                                          <input type="text" name="nPliegueSuprailiaco" class="form-control" id="inputPassword3" placeholder="Pliegue Suprailiaco(mm)">
                                       </div>
                                     </div>
                                      
-                                     <div class="form-group">
-                                      <label for="inputPassword3" class="col-sm-2 control-label">Reserva Proteica: </label>
-                                      <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Reserva Proteica">
-                                      </div>
-                                    </div>
                                      
-                                     <div class="form-group">
-                                      <label for="inputPassword3" class="col-sm-2 control-label">Reserva Energetica: </label>
-                                      <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Reserva Energetica">
-                                      </div>
-                                    </div>
                                      
-                                     <div class="form-group">
-                                      <label for="inputPassword3" class="col-sm-2 control-label">Dagnostico IMC: </label>
-                                      <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Dagnostico IMC">
-                                      </div>
-                                    </div>
                                      
-                                     <div class="form-group">
-                                      <label for="inputPassword3" class="col-sm-2 control-label">Sum Pliegues: </label>
+                                     
+                                     ol-sm-2 control-label">Sum Pliegues: </label>
                                       <div class="col-sm-10">
                                         <input type="text" class="form-control" id="inputPassword3" placeholder="Sum Pliegues">
                                       </div>
                                     </div>
                                      
-                                     
-                                     
+                                                                       
                                      
                                      
                                      
@@ -594,68 +577,7 @@
                                       </div>
                                     </div>
                                      
-                                    <div class="form-group">
-                                      <label for="inputPassword3" class="col-sm-2 control-label">IMC: </label>
-                                      <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="inputPassword3" placeholder="IMC">
-                                      </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                      <label for="inputPassword3" class="col-sm-2 control-label">%Grasa: </label>
-                                      <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="inputPassword3" placeholder="%Grasa">
-                                      </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                      <label for="inputPassword3" class="col-sm-2 control-label">Peso Ideal: </label>
-                                      <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Cargo">
-                                      </div>
-                                    </div>      
-                                     
-                                      <div class="form-group">
-                                      <label for="inputPassword3" class="col-sm-2 control-label">CMB(mm): </label>
-                                      <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Profesion">
-                                      </div>
-                                    </div> 
-                                     
-                                      <div class="form-group">
-                                      <label for="inputPassword3" class="col-sm-2 control-label">AMB(mm): </label>
-                                      <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="inputPassword3" placeholder="AMB(mm)">
-                                      </div>
-                                    </div> 
-                                     
-                                      <div class="form-group">
-                                      <label for="inputPassword3" class="col-sm-2 control-label">AGB(mm^2): </label>
-                                      <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="inputPassword3" placeholder="AGB(mm^2)">
-                                      </div>
-                                    </div> 
-                                     
-                                      <div class="form-group">
-                                      <label for="inputPassword3" class="col-sm-2 control-label">ABT(mm^2): </label>
-                                      <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="inputPassword3" placeholder="ABT(mm^2)">
-                                      </div>
-                                    </div> 
-                                     
-                                     <div class="form-group">
-                                      <label for="inputPassword3" class="col-sm-2 control-label">Circunferencia Osteomuscular: </label>
-                                      <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Circunferencia Osteomuscular">
-                                      </div>
-                                    </div> 
-                                                                           
-                                    <div class="form-group">
-                                      <div class="col-sm-offset-2 col-sm-10">
-                                        <button type="submit" class="btn btn-default">Grabar</button>
-                                        <button type="submit" class="btn btn-default">Salir</button>
-                                      </div>
-                                    </div>
+                                   
                                      
                                  </div>
                               </form>

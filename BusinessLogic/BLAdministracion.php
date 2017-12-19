@@ -3,6 +3,7 @@
 include '../DataLayer/DAAdministracion.php';
 
 $cProcedimiento = $_POST['procedimiento'];
+$oDAAdministracion = new DAAdministracion();
 
 switch ($cProcedimiento)
 {
@@ -13,6 +14,8 @@ switch ($cProcedimiento)
             ''.$_POST['cPassword'],
             ''.$_POST['cRepassword']            
         );
+        $oDAAdministracion->UsuarioUsuario($oDatos);
+        break;
     case 'GrabarPersona':
         $oDatos = array(
             ''.$_POST['cNombres'],
@@ -28,6 +31,8 @@ switch ($cProcedimiento)
             ''.$_POST['cEmail'],
             ''.$_POST['cOcupacion']
         );
+        $oDAAdministracion->GrabarPersona($oDatos);
+        break;
         
         case 'GrabarPersonal':
         $oDatos = array(
@@ -41,13 +46,65 @@ switch ($cProcedimiento)
             1,
             
         );
+         break;
+         $oDAAdministracion->GrabarPersonal($oDatos);
+         
+         case 'GrabarPaciente':
+        $oDatos = array(
+            ''.$_POST['idcama'],
+            ''.$_POST['idDieta'],
+            ''.$_POST['idHistoriaClinica'],
+            ''.$_POST['idmadre'],
+            ''.$_POST['idPaciente'],
+            ''.$_POST['idPadre'],
+            ''.$_POST['idPersona'],
+            //$_POST['idSexo'],
+            1,
+            
+        );
+         break;
+         $oDAAdministracion->GrabarPaciente($oDatos);
+         case 'GrabarPaciente':
+        $oDatos = array(
+            ''.$_POST['idcama'],
+            ''.$_POST['idDieta'],
+            ''.$_POST['idHistoriaClinica'],
+            ''.$_POST['idmadre'],
+            ''.$_POST['idPaciente'],
+            ''.$_POST['idPadre'],
+            ''.$_POST['idPersona'],
+            //$_POST['idSexo'],
+            1,
+            
+        );
+        case 'GrabarIndicadorNutricionL':
+        $oDatos = array(
+            ''.$_POST['IdGrabarIndicadorNutricionl'],
+            ''.$_POST['nCircunferenciaBraquial'],
+            ''.$_POST['nCircunfererenciaCintura'],
+            ''.$_POST['nCircunferenciaMuñeca'],
+            ''.$_POST['nPeso'],
+            ''.$_POST['nPliegueBicipital'],       
+            ''.$_POST['nPliegueBicipital'],
+          
+            
+            
+            ''.$_POST['nPliegueSuprailiaco'],
+            ''.$_POST['nPliegueTricipital]'],
+                 //$_POST['idSexo'],
+              1
+            );
+            break;
+         $oDAAdministracion->GrabarIndicadorNutricional($oDatos);
+            
+        );
         
         
 
 }
 
 
-$oDAAdministracion = new DAAdministracion();
 
-$oDAAdministracion->GrabarPersona($oDatos);
+
 //var_dump($oDatos);
+|
