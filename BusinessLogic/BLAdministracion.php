@@ -4,17 +4,20 @@ include $_SERVER['DOCUMENT_ROOT'].'/NutriService/DataLayer/DAAdministracion.php'
 
 $cProcedimiento = $_POST['procedimiento'];
 $oDAAdministracion = new DAAdministracion();
+$oResultado = array();
 
 switch ($cProcedimiento)
 {
     case 'GrabarUsuario':
         $oDatos = array(
-            ''.$_POST['cNombres'],
+            
             ''.$_POST['cUsuario'],
             ''.$_POST['cPassword'],
-            ''.$_POST['cRepassword']            
+            ''.$_POST['idPersona']
+            //''.$_POST['cRePassword']            
         );
-        $oDAAdministracion->UsuarioUsuario($oDatos);
+        $oResultado = $oDAAdministracion->GrabarUsuario($oDatos);
+        echo ''.$oResultado[0]['cMensaje'];
         break;
     case 'GrabarPersona':
         $oDatos = array(
@@ -31,61 +34,54 @@ switch ($cProcedimiento)
             ''.$_POST['cEmail'],
             ''.$_POST['cOcupacion']
         );
-        $oDAAdministracion->GrabarPersona($oDatos);
+        $oResultado = $oDAAdministracion->GrabarPersona($oDatos);
+        echo ''.$oResultado[0]['cMensaje'];
         break;
         
         case 'GrabarPersonal':
         $oDatos = array(
-            ''.$_POST['cNombres'],
+            ''.$_POST['idPersona'],
             ''.$_POST['idCargo'],
             ''.$_POST['idProfesion'],
             ''.$_POST['idGradoAcademico'],
             ''.$_POST['idServicio'],
-            ''.$_POST['idFechaIngreso'],
-            //$_POST['idSexo'],
-            1,
-            
+            ''.$_POST['dFechaIngreso'],
+            1
         );
          
-         $oDAAdministracion->GrabarPersonal($oDatos);
+         $oResultado = $oDAAdministracion->GrabarPersonal($oDatos);
+         echo ''.$oResultado[0]['cMensaje'];
          break;
         
          case 'GrabarPaciente':
         $oDatos = array(
-            ''.$_POST['idcama'],
+            ''.$_POST['idCama'],
             ''.$_POST['idDieta'],
             ''.$_POST['idHistoriaClinica'],
-            ''.$_POST['idmadre'],
-            ''.$_POST['idPaciente'],
-            ''.$_POST['idPadre'],
             ''.$_POST['idPersona'],
-            //$_POST['idSexo'],
-            1,
-        
+            ''.$_POST['idPadre'],
+            ''.$_POST['idMadre']
         );
          
-         $oDAAdministracion->GrabarPaciente($oDatos);
+         $oResultado = $oDAAdministracion->GrabarPaciente($oDatos);
+         echo ''.$oResultado[0]['cMensaje'];
          break;
      
-        case 'GrabarIndicadorNutricionL':
+        case 'GrabarIndicadorNutricional':
         $oDatos = array(
-            ''.$_POST['IdGrabarIndicadorNutricionl'],
-            ''.$_POST['nCircunferenciaBraquial'],
-            ''.$_POST['nCircunfererenciaCintura'],
-            ''.$_POST['nCircunferenciaMuñeca'],
-            ''.$_POST['nPeso'],
-            ''.$_POST['nPliegueBicipital'],       
-            ''.$_POST['nPliegueBicipital'],
-          
-            
-            
-            ''.$_POST['nPliegueSuprailiaco'],
-            ''.$_POST['nPliegueTricipital]'],
-                 //$_POST['idSexo'],
-              1
+            $_POST['nCircunferenciaMuneca'],
+            $_POST['nCircunferenciaBraquial'],
+            $_POST['nPliegueTricipital'],
+            $_POST['nCircunferenciaCintura'],
+            $_POST['nPliegueBicipital'],
+            $_POST['nPliegueSubescapular'],
+            $_POST['nPliegueSuprailiaco'],
+            $_POST['nPeso'],
+            $_POST['nTalla']
             );
             
-            $oDAAdministracion->GrabarIndicadorNutricional($oDatos);
+            $oResultado = $oDAAdministracion->GrabarIndicadorNutricional($oDatos);
+            echo ''.$oResultado[0]['cMensaje'];
             break;
  
         
