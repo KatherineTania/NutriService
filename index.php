@@ -11,19 +11,27 @@
     <div class="row">
         <div class="col-sm-3">izq</div>
         <div class="col-sm-6">
-            <form class="form-signin" method="post" action="main.php">
-                <h2 class="form-signin-heading">Inicio de Sesion</h2>
-                <label for="inputEmail" class="sr-only">Usuario: </label>
-                <input type="email" id="inputEmail" class="form-control" placeholder="Usuario" required autofocus>
-                <label for="inputPassword" class="sr-only">Clave: </label>
-                <input type="password" id="inputPassword" class="form-control" placeholder="Clave" required>
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox" value="remember-me"> Remember me
-                  </label>
-                </div>
-                <button class="btn btn-lg btn-primary btn-block" type="submit">Ingresar</button>
-            </form>
+            <div class="panel panel-primary">
+            <div class="panel-heading">                
+                <h1 class="panel-title">Acceso NutriService</h1>               
+            </div>
+            <div class="panel-body">
+                <form class="form-signin" method="post" action="main.php">
+                    <h2 class="form-signin-heading">Inicio de Sesion</h2>
+                    <label for="inputEmail" class="sr-only">Usuario: </label>
+                    <input type="email" id="inputEmail" class="form-control" placeholder="Usuario" required autofocus>
+                    <label for="inputPassword" class="sr-only">Clave: </label>
+                    <input type="password" id="inputPassword" class="form-control" placeholder="Clave" required>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox" value="remember-me"> Remember me
+                      </label>
+                    </div>
+                    <button class="btn btn-lg btn-primary btn-block" type="submit">Ingresar</button>
+                </form>
+            </div>
+          </div>
+
         </div>
         <div class="col-sm-3">der</div>        
     </div>

@@ -47,6 +47,23 @@
 </nav>
     </div>
     <div class="row">
+        <div class="col-sm-12">
+        <?php
+            
+            if(isset($_GET['cMensaje']))
+            {
+                $cAlerta ="";
+                $cAlerta = $cAlerta.'<div class="alert alert-success alert-dismissible" role="alert">'.'<br/>';
+                $cAlerta = $cAlerta.'<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>';
+                $cAlerta = $cAlerta.'<strong>Resultado: </strong>'.$_GET['cMensaje'];
+                $cAlerta = $cAlerta.'</div>';
+                
+                echo $cAlerta;
+            }
+        ?>
+        </div>
+    </div>
+    <div class="row">
         <div class="col-sm-1">izq</div>
         <div class="col-sm-10">
             <div class="row">
@@ -62,13 +79,15 @@
                                 <li><a href="#tab4primary" data-toggle="tab">Historia</a></li>
                                 <li><a href="#tab5primary" data-toggle="tab">Antropometrico</a></li>
                                 <li><a href="#tab6primary" data-toggle="tab">Persona</a></li>
-                                 <li><a href="#tab7primary" data-toggle="tab">Personal</a></li>
-
+                                <li><a href="#tab7primary" data-toggle="tab">Personal</a></li>
+                                <li><a href="#PanelReportes" data-toggle="tab">Reportes</a></li>
                             </ul>
                     </div>
                     <div class="panel-body">
                         <div class="tab-content">
-                            <div class="tab-pane fade in active" id="tab1primary">Primary 1</div>
+                            <div class="tab-pane fade in active" id="tab1primary">                                
+                                <img src="/NutriService/Common/img/PortadaNutriService.jpg" class="img-responsive" alt="Responsive image">
+                            </div>
                             <div class="tab-pane fade" id="tab2primary">
                              
                                 
@@ -152,10 +171,8 @@
 
                                     <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Dieta: </label>
-                                      <div class="col-sm-10">
-                                       
-                                        
-                                          <select name="idDieta" class="form-control">
+                                      <div class="col-sm-10">                                        
+                                        <select name="idDieta" class="form-control">
                                             <option value="1">Dieta líquida</option>
                                             <option value="2">Dieta semilíquida</option>
                                             <option value="3">Dieta blanda</option>
@@ -340,7 +357,7 @@
                                 
                                 
                             </div>
-                            <div class="tab-pane fade" id="tab3primary">
+                            <div class="tab-pane fade" id="tab4primary">
                                 
                                 
                                 <form class="form-horizontal" action="BusinessLogic/BLAdministracion.php" method="post">
@@ -479,28 +496,28 @@
                                      <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Talla: </label>
                                       <div class="col-sm-10">
-                                          <input type="number" name="nTalla" class="form-control" id="inputPassword3" placeholder="Talla">
+                                          <input type="text" name="nTalla" class="form-control" id="inputPassword3" placeholder="Talla">
                                       </div>
                                     </div>
 
                                     <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Circunferencia Muñeca (cm): </label>
                                       <div class="col-sm-10">
-                                          <input type="number" name="nCircunferenciaMuneca" class="form-control" id="inputPassword3" placeholder="Circunferencia Muñeca">
+                                          <input type="text" name="nCircunferenciaMuneca" class="form-control" id="inputPassword3" placeholder="Circunferencia Muñeca">
                                       </div>
                                     </div>
                                      
                                      <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Circunferencia Braquial(cm): </label>
                                       <div class="col-sm-10">
-                                          <input type="number" name="nCircunferenciaBraquial" class="form-control" id="inputPassword3" placeholder="Circunferencia Braquial(cm)">
+                                          <input type="text" name="nCircunferenciaBraquial" class="form-control" id="inputPassword3" placeholder="Circunferencia Braquial(cm)">
                                       </div>
                                     </div>
                                      
                                       <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Circunferencia Cintura(cm): </label>
                                       <div class="col-sm-10">
-                                          <input type="number" name="nCircunferenciaCintura" class="form-control" id="inputPassword3" placeholder="Circunferencia Cintura(cm)">
+                                          <input type="text" name="nCircunferenciaCintura" class="form-control" id="inputPassword3" placeholder="Circunferencia Cintura(cm)">
                                       </div>
                                     </div>
                                      
@@ -509,7 +526,7 @@
                                      <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Pliegue Tricipital(mm): </label>
                                       <div class="col-sm-10">
-                                          <input type="number" name="nPliegueTricipital" class="form-control" id="inputPassword3" placeholder="Pliegue Tricipital(mm)">
+                                          <input type="text" name="nPliegueTricipital" class="form-control" id="inputPassword3" placeholder="Pliegue Tricipital(mm)">
                                       </div>
                                     </div>
                                      
@@ -517,21 +534,21 @@
                                      <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Pliegue Bicipital(mm): </label>
                                       <div class="col-sm-10">
-                                          <input type="number" name="nPliegueBicipital" class="form-control" id="inputPassword3" placeholder="Pliegue Bicipital(mm)">
+                                          <input type="text" name="nPliegueBicipital" class="form-control" id="inputPassword3" placeholder="Pliegue Bicipital(mm)">
                                       </div>
                                     </div>
                                      
                                      <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Pliegue Subescapular(mm): </label>
                                       <div class="col-sm-10">
-                                          <input type="number" name="nPliegueSubescapular" class="form-control" id="inputPassword3" placeholder="Pliegue Subescapular(mm)">
+                                          <input type="text" name="nPliegueSubescapular" class="form-control" id="inputPassword3" placeholder="Pliegue Subescapular(mm)">
                                       </div>
                                     </div>
                                      
                                      <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Pliegue Subprailiaco(mm): </label>
                                       <div class="col-sm-10">
-                                          <input type="number" name="nPliegueSuprailiaco" class="form-control" id="inputPassword3" placeholder="Pliegue Subprailiaco(mm)">
+                                          <input type="text" name="nPliegueSuprailiaco" class="form-control" id="inputPassword3" placeholder="Pliegue Subprailiaco(mm)">
                                       </div>
                                     </div>
                                      
@@ -618,9 +635,8 @@
                                       <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Sexo: </label>
                                       <div class="col-sm-10">
-                                          <input type="radio" name="idSexo"> Hombre
-                                          <input type="radio" name="idSexo"> Mujer
-                                          
+                                          <input type="radio" value="1" name="idSexo"> Hombre
+                                          <input type="radio" value="0" name="idSexo"> Mujer                                          
                                       </div>
                                     </div>
                                      
@@ -643,9 +659,6 @@
 
                                 
                             </div>
-                            
-                                                                               
-                                 
                             
                             <div class="tab-pane fade" id="tab7primary">
                                                                                           
@@ -727,6 +740,22 @@
                             <div class="col-sm-6"></div>
                             
                         </div>
+                            <div class="tab-pane fade in active" id="PanelReportes">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <a type="button" target="_blank" href="/NutriService/BusinessLogic/BLReportes.php" class="btn btn-default">Evaluacion Nutricional</a>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <a type="button"  class="btn btn-default">Pacientes</a>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <a type="button"  class="btn btn-default">Personal</a>
+                                    </div>
+                                </div>
+                                <!--<div class="row">
+                                    
+                                </div>-->
+                            </div>
                     </div>
                 </div>
             </div>

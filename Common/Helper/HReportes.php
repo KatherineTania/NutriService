@@ -5,20 +5,20 @@ class HReportes
     protected $pdf;
     protected $section;
     protected $borders;
-    protected $textAlign;    
+    protected $textAlign;
     protected $pageWidth;
 
 
     public function __construct() 
     {
-        $this->pdf=new TCPDF('P','pt');
+        $this->pdf=new TCPDF('L','pt');
         $this->pdf->SetMargins(60, 80, 60);
     }
    
     public function addHeader()
     {
-        $title='UNIVERSIDAD NACIONAL DEL ALTIPLANO';
-        $stitle='OFICINA DE TECNOLOGIA INFORMATICA';
+        $title='NUTRISERVICE (V 1.0) - 2017';
+        $stitle='Aplicativo de Gestion';
         $ln='';
         
         $this->pdf->setHeaderData($ln, 40,$title,$stitle);
@@ -58,7 +58,7 @@ class HReportes
                 '', true, 150, '', false, false, 1, false, false, false);
         }
     }
-    public function addTable($data,$tableStyle=null,$fRowStyle=null,$cellStyle=null)
+    public function addTable($data,$tableStyle=null,$colWidth=null,$fRowStyle=null,$cellStyle=null)
     {
         $index=array_keys($data[0]);
         $len=count($index);
@@ -66,18 +66,35 @@ class HReportes
         $this->setParagraphStyle($cellStyle['align']);
         $this->setTableStyle($tableStyle);
         
-        $width=  ($this->pdf->getPageWidth())/($len+1);        
-        
+        $width=  ($this->pdf->getPageWidth())/($len+1);
+        $this->pdf->SetFillColor(220, 255, 220);
+
         for($i=0;$i<$len;$i++)
-        {$this->pdf->Cell($width, 0, $index[$i], $this->borders,0, $this->textAlign, false,'',0,false,'','T');}
+        //{$this->pdf->Cell($width, 0, $index[$i], $this->borders,0, $this->textAlign, false,'',0,false,'','T');}
+        {
+            
+            if(count($colWidth)>0)
+            {
+                $width = $colWidth[$i];
+            }
+            $this->pdf->MultiCell($width, 25, $index[$i], $this->borders, $this->textAlign, 1, 0, '', '', true);            
+            //$this->pdf->Cell($width, 0, $index[$i], $this->borders,0, $this->textAlign, false,'',0,false,'','T');
+            
+        }
         $this->pdf->Ln();
         
         foreach($data as $dt)
         {
+            $i=0;
             foreach($dt as $d)
             {
-                $this->pdf->Cell($width, 0, $d, $this->borders,0, $this->textAlign, false,'',0,false,'','T');
-                //echo '<td>'.$d.'</td>';		
+                if(count($colWidth)>0)
+                {
+                    $width = $colWidth[$i];
+                }
+                $this->pdf->Cell($width, 0, $d, $this->borders,0, $this->textAlign, false,'',0,false,'','T');                
+                
+                $i++;
             }
             $this->pdf->Ln();
         }
@@ -100,7 +117,7 @@ class HReportes
             case 'left':$this->textAlign='L';break;
             case 'right':$this->textAlign='R';break;
             case 'center':$this->textAlign='C';break;
-            default : $$this->textAlign='L';break;
+            default : $this->textAlign='L';break;
         }
     }
     
