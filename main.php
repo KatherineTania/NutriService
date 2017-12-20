@@ -47,6 +47,23 @@
 </nav>
     </div>
     <div class="row">
+        <div class="col-sm-12">
+        <?php
+            
+            if(isset($_GET['cMensaje']))
+            {
+                $cAlerta ="";
+                $cAlerta = $cAlerta.'<div class="alert alert-success alert-dismissible" role="alert">'.'<br/>';
+                $cAlerta = $cAlerta.'<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>';
+                $cAlerta = $cAlerta.'<strong>Resultado: </strong>'.$_GET['cMensaje'];
+                $cAlerta = $cAlerta.'</div>';
+                
+                echo $cAlerta;
+            }
+        ?>
+        </div>
+    </div>
+    <div class="row">
         <div class="col-sm-1">izq</div>
         <div class="col-sm-10">
             <div class="row">
@@ -62,48 +79,57 @@
                                 <li><a href="#tab4primary" data-toggle="tab">Historia</a></li>
                                 <li><a href="#tab5primary" data-toggle="tab">Antropometrico</a></li>
                                 <li><a href="#tab6primary" data-toggle="tab">Persona</a></li>
-                                 <li><a href="#tab7primary" data-toggle="tab">Personal</a></li>
-
+                                <li><a href="#tab7primary" data-toggle="tab">Personal</a></li>
+                                <li><a href="#PanelReportes" data-toggle="tab">Reportes</a></li>
                             </ul>
                    
                     
                     </div>
                     <div class="panel-body">
                         <div class="tab-content">
-                            <div class="tab-pane fade in active" id="tab1primary">Primary 1</div>
+                            <div class="tab-pane fade in active" id="tab1primary">                                
+                                <img src="/NutriService/Common/img/PortadaNutriService.jpg" class="img-responsive" alt="Responsive image">
+                            </div>
                             <div class="tab-pane fade" id="tab2primary">
                              
                                 
-                             <form class="form-horizontal">
+                                <form class="form-horizontal" action="BusinessLogic/BLAdministracion.php" method="post">
                                  <input name="procedimiento" type="text" value="GrabarUsuario" hidden="true" />
                                 
                                  <div class="col-sm-6">
                                  
                                     <div class="form-group">
-                                      <label for="inputEmail3" class="col-sm-2 control-label">Nombres: </label>
+                                      <label for="inputEmail3" class="col-sm-2 control-label">ID Persona: </label>
                                       <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="inputEmail3" placeholder="Nombres">
+                                          <input type="number" name="idPersona" class="form-control" id="inputEmail3" placeholder="ID Persona">
                                       </div>
                                     </div>
 
                                     <div class="form-group">
                                       <label for="inputEmail3" class="col-sm-2 control-label">Usuario: </label>
                                       <div class="col-sm-10">
-                                          <input type="text" class="form-control" id="inputtext3" placeholder="Primer Apellido">
+                                          <input type="text" name="cUsuario" class="form-control" id="inputtext3" placeholder="Usuario">
                                       </div>
                                     </div>
 
                                     <div class="form-group">
                                       <label for="inputText3" class="col-sm-2 control-label">Contraseña </label>
                                       <div class="col-sm-10">
-                                          <input type="password" class="form-control" id="inputtext3" placeholder="Segundo Apellido">
+                                          <input type="password" name="cPassword" class="form-control" id="inputtext3" placeholder="Contreaseña">
                                       </div>
                                     </div>
                                      
                                      <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Re contraseña </label>
                                       <div class="col-sm-10">
-                                          <input type="password" class="form-control" id="inputPassword3" placeholder="Numero de documento">
+                                          <input type="password" name="cRePassword" class="form-control" id="inputPassword3" placeholder="Re Contreaseña">
+                                      </div>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                      <div class="col-sm-offset-2 col-sm-10">
+                                        <button type="submit" class="btn btn-default">Grabar</button>
+                                        <button type="submit" class="btn btn-default">Salir</button>
                                       </div>
                                     </div>
                                      
@@ -119,47 +145,45 @@
                             <div class="tab-pane fade" id="tab3primary">
                                 
                                 
-                                <form class="form-horizontal">
+                                <form class="form-horizontal" action="BusinessLogic/BLAdministracion.php" method="post">
+                                    <input name="procedimiento" type="text" value="GrabarPaciente" hidden="true" />
                                 
                                  <div class="col-sm-6">
                                  
                                     <div class="form-group">
-                                      <label for="inputEmail3" class="col-sm-2 control-label">Nombres: </label>
+                                      <label for="inputEmail3" class="col-sm-2 control-label">ID Persona: </label>
                                       <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="inputEmail3" placeholder="Nombres">
+                                          <input type="text" name="idPersona" class="form-control" id="inputEmail3" placeholder="ID Persona">
                                       </div>
                                     </div>
 
                                     <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Cama: </label>
                                       <div class="col-sm-10">
-                                         <select class="form-control">
-                                            <option>101</option>
-                                            <option>102</option>
-                                            <option>103</option>
-                                            <option>104</option>
-                                            <option>105</option>
+                                          <select name="idCama" class="form-control">
+                                             <option value="1">101</option>
+                                             <option value="2">102</option>
+                                             <option value="3">103</option>
+                                             <option value="4">104</option>
+                                             <option value="5">105</option>
+                                             <option value="6">106</option>
                                         </select>
                                       </div>
                                     </div>
 
                                     <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Dieta: </label>
-                                      <div class="col-sm-10">
-                                       
-                                        
-                                        <select class="form-control">
-                                            <option>Dieta líquida</option>
-                                            <option>Dieta semilíquida</option>
-                                            <option>Dieta blanda</option>
-                                            <option>Dieta hipocalórica</option>
-                                            <option>Dieta diabética</option>
-                                            <option>Dieta hipoproteica</option>
-                                            <option>Dieta hipolipídica</option>
-                                            <option>Dieta astringente</option>
-                                            <option>Dieta laxante o rica en residuos</option>
-                                            
-                                            
+                                      <div class="col-sm-10">                                        
+                                        <select name="idDieta" class="form-control">
+                                            <option value="1">Dieta líquida</option>
+                                            <option value="2">Dieta semilíquida</option>
+                                            <option value="3">Dieta blanda</option>
+                                            <option value="4">Dieta hipocalórica</option>
+                                            <option value="5">Dieta diabética</option>
+                                            <option value="6">Dieta hipoproteica</option>
+                                            <option value="7">Dieta hipolipídica</option>
+                                            <option value="8">Dieta astringente</option>
+                                            <option value="9">Dieta laxante</option>                                          
                                         </select>
                                         
                                       </div>
@@ -168,16 +192,16 @@
                                      
                                      
                                      <div class="form-group">
-                                      <label for="inputPassword3" class="col-sm-2 control-label">Historia Clinica: </label>
+                                      <label for="inputPassword3" class="col-sm-2 control-label">ID Historia Clinica: </label>
                                       <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Historia Clinica">
+                                          <input type="number" name="idHistoriaClinica" class="form-control" id="inputPassword3" placeholder="Id Historia Clinica">
                                       </div>
                                     </div>
                                      
                                       <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Padre: </label>
                                       <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Padre">
+                                          <input type="number" name="idPadre" class="form-control" id="inputPassword3" placeholder="Padre">
                                       </div>
                                     </div>
                                      
@@ -186,27 +210,19 @@
                                      <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Madre </label>
                                       <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Madre">
+                                          <input type="number" name="idMadre" class="form-control" id="inputPassword3" placeholder="Madre">
                                       </div>
                                     </div>
                                      
-                                    
-                                     
-                                     
-                                     
-                                     
-                                </div>
-                                 <div class="col-sm-6">
-                                 
-                                    
-                                     
-                                                                           
                                     <div class="form-group">
                                       <div class="col-sm-offset-2 col-sm-10">
                                         <button type="submit" class="btn btn-default">Grabar</button>
                                         <button type="submit" class="btn btn-default">Salir</button>
                                       </div>
                                     </div>
+                                     
+                                </div>
+                                 <div class="col-sm-6">
                                      
                                  </div>
                               </form>
@@ -215,7 +231,8 @@
                             </div>
                             <div class="tab-pane fade" id="tab4primary">
                                 
-                              <form class="form-horizontal">
+                              <form class="form-horizontal" action="BusinessLogic/BLAdministracion.php" method="post">
+                                  
                                 
                                  <div class="col-sm-6">
                                  
@@ -342,10 +359,10 @@
                                 
                                 
                             </div>
-                            <div class="tab-pane fade" id="tab3primary">
+                            <div class="tab-pane fade" id="tab4primary">
                                 
                                 
-                                <form class="form-horizontal">
+                                <form class="form-horizontal" action="BusinessLogic/BLAdministracion.php" method="post">
                                 
                                  <div class="col-sm-6">
                                  
@@ -460,42 +477,49 @@
                             </div>
                             <div class="tab-pane fade" id="tab5primary">
                                 
-                                 <form class="form-horizontal">
+                                 <form class="form-horizontal" action="BusinessLogic/BLAdministracion.php" method="post">
+                                     <input name="procedimiento" type="text" value="GrabarIndicadorNutricional" hidden="true" />
                                 
-                                 <div class="col-sm-6">
-                                 
+                                                                
                                     <div class="form-group">
                                       <label for="inputEmail3" class="col-sm-2 control-label">Codigo Paciente: </label>
                                       <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="inputEmail3" placeholder="Codigo Paciente">
+                                          <input type="number" name="idPaciente" class="form-control" id="inputEmail3" placeholder="ID Paciente">
                                       </div>
                                     </div>
-
+                                    
                                     <div class="form-group">
-                                      <label for="inputPassword3" class="col-sm-2 control-label">Fecha Registro: </label>
+                                      <label for="inputPassword3" class="col-sm-2 control-label">Peso: </label>
                                       <div class="col-sm-10">
-                                        <input type="text"  class="form-control" id="inputPassword3" placeholder="Fecha Registro">
+                                          <input type="number" name="nPeso" class="form-control" id="inputPassword3" placeholder="Peso">
+                                      </div>
+                                    </div>
+                                     
+                                     <div class="form-group">
+                                      <label for="inputPassword3" class="col-sm-2 control-label">Talla: </label>
+                                      <div class="col-sm-10">
+                                          <input type="text" name="nTalla" class="form-control" id="inputPassword3" placeholder="Talla">
                                       </div>
                                     </div>
 
                                     <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Circunferencia Muñeca (cm): </label>
                                       <div class="col-sm-10">
-                                          <input type="text"name="nCircunferenciaMuñeca" class="form-control" id="inputPassword3" placeholder="Circunferencia Muñeca">
+                                          <input type="text" name="nCircunferenciaMuneca" class="form-control" id="inputPassword3" placeholder="Circunferencia Muñeca">
                                       </div>
                                     </div>
                                      
                                      <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Circunferencia Braquial(cm): </label>
                                       <div class="col-sm-10">
-                                          <input type="text"name="nCircunferenciaBraquial" class="form-control" id="inputPassword3" placeholder="Circunferencia Braquial(cm)">
+                                          <input type="text" name="nCircunferenciaBraquial" class="form-control" id="inputPassword3" placeholder="Circunferencia Braquial(cm)">
                                       </div>
                                     </div>
                                      
                                       <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Circunferencia Cintura(cm): </label>
                                       <div class="col-sm-10">
-                                          <input type="text"name="nCircunferenciaCintura" class="form-control" id="inputPassword3" placeholder="Circunferencia Cintura(cm)">
+                                          <input type="text" name="nCircunferenciaCintura" class="form-control" id="inputPassword3" placeholder="Circunferencia Cintura(cm)">
                                       </div>
                                     </div>
                                      
@@ -512,74 +536,33 @@
                                      <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Pliegue Bicipital(mm): </label>
                                       <div class="col-sm-10">
-                                          <input type="text"name="nPliegueBicipital" class="form-control" id="inputPassword3" placeholder="Pliegue Bicipital(mm)">
-                                      </div> 
+                                          <input type="text" name="nPliegueBicipital" class="form-control" id="inputPassword3" placeholder="Pliegue Bicipital(mm)">
+                                      </div>
                                     </div>
                                      
                                      <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Pliegue Subescapular(mm): </label>
                                       <div class="col-sm-10">
-                                          <input type="text"name="nPliegueSubescapular" class="form-control" id="inputPassword3" placeholder="Pliegue Subescapular(mm)">
+                                          <input type="text" name="nPliegueSubescapular" class="form-control" id="inputPassword3" placeholder="Pliegue Subescapular(mm)">
                                       </div>
                                     </div>
                                      
                                      <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Pliegue Suprailiaco(mm): </label>
                                       <div class="col-sm-10">
-                                          <input type="text" name="nPliegueSuprailiaco" class="form-control" id="inputPassword3" placeholder="Pliegue Suprailiaco(mm)">
+                                          <input type="text" name="nPliegueSuprailiaco" class="form-control" id="inputPassword3" placeholder="Pliegue Subprailiaco(mm)">
                                       </div>
                                     </div>
                                      
-                                     
-                                     
-                                     
-                                     
-                                     ol-sm-2 control-label">Sum Pliegues: </label>
-                                      <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Sum Pliegues">
+                                                                           
+                                    <div class="form-group">
+                                      <div class="col-sm-offset-2 col-sm-10">
+                                        <button type="submit" class="btn btn-default">Grabar</button>
+                                        <button type="submit" class="btn btn-default">Salir</button>
                                       </div>
                                     </div>
                                      
-                                                                       
-                                     
-                                     
-                                     
-                                </div>
-                                 <div class="col-sm-6">
-                                     
-                                     <div class="form-group">
-                                      <label for="inputPassword3" class="col-sm-2 control-label">Peso: </label>
-                                      <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Peso">
-                                      </div>
-                                    </div>
-                                     
-                                     <div class="form-group">
-                                      <label for="inputPassword3" class="col-sm-2 control-label">Talla: </label>
-                                      <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Talla">
-                                      </div>
-                                    </div>
-                                     
-                                     <div class="form-group">
-                                      <label for="inputPassword3" class="col-sm-2 control-label">Edad: </label>
-                                      <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Edad">
-                                      </div>
-                                    </div>
-                                 
-                                     <div class="form-group">
-                                      <label for="inputPassword3" class="col-sm-2 control-label">Sexo: </label>
-                                      <div class="col-sm-10">
-                                          <input type="radio" name="idSexo"> Hombre
-                                          <input type="radio" name="idSexo"> Mujer
-                                          
-                                      </div>
-                                    </div>
-                                     
-                                   
-                                     
-                                 </div>
+                                
                               </form>
                                 
                                 
@@ -616,14 +599,14 @@
                                      <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Num. Doc: </label>
                                       <div class="col-sm-10">
-                                        <input type="text" name="cDocumento" class="form-control" id="inputPassword3" placeholder="Numero de documento">
+                                        <input type="number" name="cDocumento" class="form-control" id="inputPassword3" placeholder="Numero de documento">
                                       </div>
                                     </div>
                                      
                                       <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Fecha Nacimiento: </label>
                                       <div class="col-sm-10">
-                                        <input type="text" name="dFechaNacimiento"  class="form-control" id="inputPassword3" placeholder="Fecha de nacimeinto">
+                                          <input type="date" name="dFechaNacimiento"  class="form-control" id="inputPassword3" placeholder="Fecha de nacimeinto">
                                       </div>
                                     </div>
                                           
@@ -654,9 +637,8 @@
                                       <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Sexo: </label>
                                       <div class="col-sm-10">
-                                          <input type="radio" name="idSexo"> Hombre
-                                          <input type="radio" name="idSexo"> Mujer
-                                          
+                                          <input type="radio" value="1" name="idSexo"> Hombre
+                                          <input type="radio" value="0" name="idSexo"> Mujer                                          
                                       </div>
                                     </div>
                                      
@@ -680,9 +662,6 @@
                                 
                             </div>
                             
-                                                                               
-                                 
-                            
                             <div class="tab-pane fade" id="tab7primary">
                                                                                           
                                 <div class="col-sm-6">                            
@@ -690,44 +669,64 @@
                                           <input name="procedimiento" type="text" value="GrabarPersonal" hidden="true" />
                                     
                                     <div class="form-group">
-                                      <label for="inputEmail3" class="col-sm-2 control-label">Nombres: </label>
+                                      <label for="inputEmail3" class="col-sm-2 control-label">IdPersona: </label>
                                       <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="inputEmail3" placeholder="Nombres">
+                                          <input type="text" name="idPersona" class="form-control" id="inputEmail3" placeholder="Id Persona">
                                       </div>
                                     </div>
 
                                     <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Cargo: </label>
                                       <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Cargo">
+                                          <select name="idCargo" class="form-control">
+                                            <option value="1">NUTRICIONISTA</option>
+                                            <option value="2">MEDICO</option>
+                                            <option value="3">INTERNO</option>
+                                            
+                                        </select>
                                       </div>
                                     </div>      
                                      
                                       <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Profesion: </label>
                                       <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Profesion">
+                                          <select name="idProfesion" class="form-control">
+                                            <option value="1">NUTRICIONISTA</option>
+                                            <option value="2">MEDICO</option>
+                                            <option value="3">INTERNO</option>
+                                            
+                                        </select>
                                       </div>
                                     </div> 
                                      
                                       <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Grado Academico: </label>
                                       <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Grado Academico">
+                                          <select name="idGradoAcademico" class="form-control">
+                                            <option value="1">BACHILLER</option>
+                                            <option value="2">MAESTRO</option>
+                                            <option value="3">DOCTOR</option>
+                                            
+                                        </select>
                                       </div>
                                     </div> 
                                      
                                       <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Servicio: </label>
                                       <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Servicio">
+                                          <select name="idServicio" class="form-control">
+                                            <option value="1">MEDICINA</option>
+                                            <option value="2">NUTRICION</option>
+                                            <option value="3">ODONTOLOGIA</option>
+                                            <option value="4">OBSTETRICIA</option>
+                                        </select>
                                       </div>
                                     </div> 
                                      
                                       <div class="form-group">
                                       <label for="inputPassword3" class="col-sm-2 control-label">Fecha de Ingreso: </label>
                                       <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Fecha de Ingreso">
+                                          <input type="date" name="dFechaIngreso" class="form-control" id="inputPassword3" placeholder="Fecha de Ingreso">
                                       </div>
                                     </div> 
                                                                            
@@ -743,6 +742,22 @@
                             <div class="col-sm-6"></div>
                             
                         </div>
+                            <div class="tab-pane fade in active" id="PanelReportes">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <a type="button" target="_blank" href="/NutriService/BusinessLogic/BLReportes.php" class="btn btn-default">Evaluacion Nutricional</a>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <a type="button"  class="btn btn-default">Pacientes</a>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <a type="button"  class="btn btn-default">Personal</a>
+                                    </div>
+                                </div>
+                                <!--<div class="row">
+                                    
+                                </div>-->
+                            </div>
                     </div>
                 </div>
             </div>
