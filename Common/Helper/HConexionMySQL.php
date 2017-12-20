@@ -1,8 +1,11 @@
 <?php
-include '../Common/Entity/Sistema.php';
-include '../Common/Entity/TipoDato.php';
+//include '../Common/Entity/Sistema.php';
+//include '../Common/Entity/TipoDato.php';
 //include 'Common/Entity/Sistema.php';
 //include 'Common/Entity/TipoDato.php';
+
+include $_SERVER['DOCUMENT_ROOT'].'/NutriService/Common/Entity/Sistema.php';
+include $_SERVER['DOCUMENT_ROOT'].'/NutriService/Common/Entity/TipoDato.php';
 
 class HConexionMySQL
 {
@@ -30,7 +33,7 @@ class HConexionMySQL
     public function EjecutarSP($cNombreSP,$oParams=array())
     {
         
-        
+        $dtResultado = array();
         $aListaParametros = $this->ListarParametros($cNombreSP);
         //var_dump($aListaParametros);
         
@@ -65,9 +68,13 @@ class HConexionMySQL
         }
         
         $cQuery = substr($cQuery, 0, strlen($cQuery)-1);
+        if(count($aListaParametros)==0)
+        {
+            $cQuery = $cQuery."(";
+        }
         $cQuery = $cQuery.")";
         
-        echo 'query: '.$cQuery;
+        //echo 'query: '.$cQuery;
         
         $this->Conectar();
         
@@ -76,8 +83,7 @@ class HConexionMySQL
         }
         
         if ($oData = $this->objConexion->store_result()) {
-            $i=0;
-            $dtResultado = array();
+            $i=0;            
             while ($row = $oData->fetch_assoc()){
                 foreach ($row as $key => $value) {
                     $dtResultado[$i][$key] = $value;
